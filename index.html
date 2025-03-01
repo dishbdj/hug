@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open When Letters for Tanvi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+        }
+        h1 {
+            color: #ff1493;
+        }
+        .envelope {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>💌 Open When Letters for Tanvi 🐻💌</h1>
+
+    <button class="envelope" onclick="openLetter('birthday')">🎂 Open When It's Your Birthday (Right Now!)</button>
+    <button class="envelope" onclick="openLetter('sad')">😔 Open When You Feel Sad</button>
+    <button class="envelope" onclick="openLetter('miss')">❤️ Open When You Miss Me</button>
+    <button class="envelope" onclick="openLetter('hungry')">🍕 Open When You Are Hungry</button>
+    <button class="envelope" onclick="openLetter('trip')">✈️ Open When You Feel Like Going on a Trip</button>
+    <button class="envelope" onclick="openLetter('motivation')">💪 Open When You Need Motivation</button>
+    <button class="envelope" onclick="openLetter('angry')">😡 Open When You Are Angry at Me</button>
+    <button class="envelope" onclick="openLetter('exam')">📚 Open When You Haven't Studied for Exam</button>
+    <button class="envelope" onclick="openLetter('clg_days')">🎓 Open When You Are Missing College Days</button>
+    <button class="envelope" onclick="openLetter('dont_care')">❤️ Open When You Feel Like I Don't Care</button>
+    <button class="envelope" onclick="openLetter('my_heart')">❤️ Open This....from bottom of my heart</button>
+
+    <script>
+        function openLetter(id) {
+            let messages = {
+                "birthday": `
+                    <h2>🎂 Happy Birthday Tanvi! 🎂🐻</h2>
+                    <p>ise to tu Pehle hi kholne wali thi na 😂......chal thik hai......
+by the way tujhe janamdin ki bahot sari shubhkamnaye......yrr to to ab 19 complete ho gai matlb.......
+yani ki ham sab se badi 😂......jo kisiko bhi sach nhi lagega.....itni chotisi to hai yrr tu.....
+tu bata kon manega 😂......
+tere gal khichne me na mujhe bada maja aata hai yrr.....love you bhalu🐻
+chal tujhpr ek pyari si poem banayi hai......padh jara..... 🎉</p>
+                `,
+                "sad": `
+                    <h2>😊 Don't be sad! 😊</h2>
+                    <p>kya?? khol diya tune ise??
+yaad rakh......bas 1 mahine tk sath hai hum.......agar kabhi sad hui na to dekh le........
+fir mai na bol dungi use 😂........ki tujhse baat na kare......😂.......pata to chal hi gaya hoga.....kise 😂
+agar fir bhi kisi wajah se to ruth gai na......to jara in tasveero ko dekh le......bachpan me kaisi golu molu thi.....
+I mean ab bhi kuch kaam nhi hai tu 😂🤗</p>
+                `,
+                "miss": `
+                    <h2>❤️ Missing Me? ❤️</h2>
+                    <p>arey......ise tu khole bina kaise reh sakti hai yrr.......miss to karegi hi na tu......
+hum dono bhi foodie partners jo hai.......😂......vaishnavi or pratiksha ko to itna shauk nhi tha khane ka......
+pr hamari wajah se vo bhi foodie ban gai 😂 ......
+sun jab bhi tujhe yaad aaye na meri to please call mat karna yrr.....ek msg hi kar dena......😂 
+agar call hi karna hai to tujhe to pata hai hi ki whatsapp call karna 😂 
+yrr pr hum dono ki to photos hi nhi hai yrr.......iske alawa......ye to ek hai jo days ke waqt badi mushkil se nikali thi 😂 .....chod ab.....ise hi dekh kr kaam chala le yrr 😂 😊</p>
+                `,
+                "hungry": `
+                    <h2>🍕 Foodie Tanvi Alert! 🍕</h2>
+                    <p>is envelop ko to tujhe roj kholne ki jarurt hai 😂
+mujhe to vo din kabhi yaad nhi jab humne bs ek hi samosa ya ek hi vadapav khaya ho 😂.......
+hame khuch mile ya na mile.......bhai khana is very very important......
+pata nhi log ruth jaane pr khana kaise chod dete hai.......
+bhai itni to guarantee hai ki ye hum se to bilkul nhi ho sakta 😂.......yaad hai vo din......?
+jo chocolate tune dhotre sir ke liye layi thi.....vo humne kaisi khayi thi 😂.....
+dekh jara......khudko bhi aur mujhe bhi 😂😂</p>
+                `,
+                "trip": `
+                    <h2>✈️ Trip ka plan? ✈️</h2>
+                    <p>arey bhai hum gao kab jaa rhe hai??........ohh wait......I mean Kopargaon ke market me 😂 
+yrr itne sare plans banaye ki yaha challenge, waha challenge......
+chal ek to success ho gya......Shirdi wala......😂......Macdonald ka burger to khane ko mila !!😂
+ab aur agr kahi ghumne ka man kar rha hai to sidha google map open kar de yrr.....
+mast bina kharche ke.....bina thake puri duniya khum ke aa ja 😂......
+dekh na shirdi gaye the.....tab bhi humne pictures click hi nhi ki.....jaane de.....ye group photo hi dekh le.....😆</p>
+                `,
+                "motivation": `
+                    <h2>💪 You Got This! 💪</h2>
+                    <p>bhai motivation to hamare liye dur dur tak mayne nhi rakhti......😂
+aur fir bhi agar tune ise khola hai to......bandi life me serious ho gai matlb 😂
+yrr pr tujhe to pata hai......mujhe khud hi motivation ki jarurt hai......mai kya ghanta motivate karu tujhe.....
+last one month is remaining now.......bhad me jaye motivation......
+mast jee bharke jee le yrr.....padhai to fir bhi kar hi lenge hum......
+fir bhi mai to itna hi keh sakti hu...."CR, power on!!!!" 😂 
+dekh tere liye na.....motivation ka video bhi dala maine......class test ke waqt me kitna seriously study kr rhi thi.....😂🚀</p>
+                `,
+                "angry": `
+                    <h2>😡 Still Mad? 😡</h2>
+                    <p>laga nhi tha ki ise bhi kholne ki nobat aayegi.....😂
+dekh yrr mujhe to manana aata hi nhi hai......agar tu sach me gussa ho gai hai to......
+mujhse na baat karna band kar de.....aisa mai kabhi nhi kahungi yrr.....pagal hai kya.....
+ulta tu hi aakar na mujhse baat kar ha......mujhe accha lagega na 😂......fir mujhe na chocolate de.......
+fir tera gussa na yu gayab ho jayega 😂😊</p>
+                `,
+                "exam": `
+                    <h2>📚 Exam Stress? 📚</h2>
+                    <p>mujhe lagta to nhi ki tu ise kholegi......
+kyuki hamesha padhkr hi to aati hai yrr tu......mere jaisi thodi hai.......
+par paata nhi fir bhi kyu exams me ghul kilakr aati hai 😂......aane ke baad kehti hai yrr paper me to kuch bhi likhkr aayi hu mai.....pr marks to bade acche lati hai 😂......
+ab isme to mai kuch na bolu to hi sahi rahega.......jaane de 😂 💯</p>
+                `,
+                "clg_days": `
+                    <h2>🎓 Missing College Days? 🎓</h2>
+                    <p>Yaar, woh subah jaldi aake tere liye bench reserve karna… woh ‘ATM machine’ wali masti… 
+yeh sab yaad aayega na? 
+Bas ek baat yaad rakhna, hum alag zaroor ho rahe hain, par dosti wahi ki wahi hai! ❤️
+bas tujhe kaha na ki msg karna, call nhi 😂......
+yrr bahot yaad aayegi yrr teri.......meri pyaari si bhalu 🐻❤️</p>
+                `,
+                "dont_care": `
+                    <h2>❤️ Feel Like I Don't Care? ❤️</h2>
+<p>
+    🍯Mujhe dukh tab bhi hoga jab first se last year me subah jaldi aake tere liye bench reserve karna band kar dungi…<br>
+    → Pehle sochti thi ki hamesha tere liye jagah bana ke rakhungi, par ab sochti hoon ki agli baar tere paas baithne ka mauka kab milega? 😞
+</p>
+<p>
+    🍯Mujhe dukh tab bhi hua jab main har baar gussa sirf tujhpar nikalti thi, aur tune kabhi kuch nahi kaha…<br>
+    → Pata nahi kaise tu har baar chup reh jati thi, par aaj sochti hoon ki shayad tujhe bhi bura lagta hoga… 😔
+</p>
+<p>
+    🍯Mujhe dukh tab bhi hua jab hamne itne saare plans banaye jo kabhi successful nahi hue…<br>
+    → Har baar socha tha ki ek din zaroor jayenge ghumne, par ab realize ho raha hai ki shayad us "ek din" ka kabhi aana hi nahi tha… 💔
+</p>
+<p>
+    🍯Mujhe dukh tab bhi hua jab hamari Shirdi trip successful ho gayi, par mujhe pata tha ki ye ek last trip bhi ho sakti hai…<br>
+    → Us waqt hum maze kar rahe the, par kahin na kahin dil me ek fear tha ki ye moments wapas nahi aayenge… 🥺
+</p>
+<p>
+    🍯Ek ajeeb sa silence tab bhi mehsoos hoga jab last baar assignment submit karenge…<br>
+    → Pehle assignments pending hote the, ab dosti pending reh jayegi… 😞
+</p>
+<p>
+    🍯Ek halka sa regret tab bhi mehsoos hoga jab tu mujhe message karegi, aur main online hoke bhi reply nahi kar paungi…<br>
+    → Pehle time pass ke liye baat karte the, ab time hi nahi milega baat karne ke liye… 🥺
+</p>
+<p>
+    🍯Mujhe dukh tab bhi hoga jab mai last time tujhe ‘Bhalu’ bulaungi, aur fir wo sirf ek yaad banke reh jayega…<br>
+    → Pehle mai tujhe chidhane ke liye Bhalu bulati thi aur tu mujhe manda badak kehti thi....... ab lagta hai ki agar tu na bulaye, to kuch missing lagega… 🐻💖
+</p>
+<p>
+    🍯Mujhe dukh tab bhi hoga jab last baar class me saath baithna bandh kar denge…<br>
+    → Pehle har din class me enter karte hi seat ka tension hota tha, ab bas ek hi tension hai… ki wo seat fir kabhi hamari nahi hogi… 💔
+</p>
+<p>
+    🍯Mujhe dukh har baar hua jab tum sab clg ke yaadon me royi........<br>
+    → yrr mere anadr bhi feelings hai......fark sirf itna hai na ki.... tum sab rokar apni emotins dikhati ho.....<br>
+    aur mai chup rehkr apni feelings ko sambhalti hu......pr iska matlb ye nhi na ki meri dosti tumhare liye kaam hai 😔🥺
+</p>
+
+`,
+                "my_heart": `
+                    <h2>📚 I really really really.... 📚</h2>
+                    <p>Love you ❤️<br>
+Miss you 😢<br>
+Hate you 😤 (par pyaar se)<br>
+Need you 🤗<br>
+Want you 😏<br>
+Respect you 🙌<br>
+Tease you 😜<br>
+Care for you 💖<br>
+Trust you 🤞<br>
+Annoy you 😆<br>
+Support you 💪<br>
+Understand you 🤝<br>
+Forgive you 😇<br>
+Thank you 🙏<br>
+Miss annoying you 🤪<br>
+Miss fighting with you 🤭<br>
+Miss irritating you 😆<br>
+Can’t forget you 😍
+</p>
+
+                `
+            };
+            
+            let newWindow = window.open("", "_blank", "width=400,height=400");
+            newWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Open When</title>
+                        <style>
+                            body {
+                                text-align: center;
+                                font-family: Arial, sans-serif;
+                                padding: 20px;
+                                background-color: #fff0f5;
+                            }
+                            h2 {
+                                color: #ff1493;
+                            }
+                            p {
+                                font-size: 18px;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        ${messages[id]}
+                    </body>
+                </html>
+            `);
+        }
+    </script>
+</body>
+</html>
